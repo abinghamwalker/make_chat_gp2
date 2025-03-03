@@ -2,6 +2,12 @@
 
 This repository contains a step-by-step implementation of a Large Language Model based on GPT-2 architecture, following Sebastian Raschka's book "Build a Large Language Model (From Scratch)" and foundational papers like "Attention Is All You Need" (2017) by Vaswani et al.
 
+## Files to note in order are: -
+
+- My_GPT : This is the main GPT structure which draws heavy links with the credited source material.
+- My_GPT_download : This is a download of the GPT-2 actual weights and then run through the same generation function written for my model.
+- My_GP_testing : This is an area that I had planned to test different attention heads, temperatures and top k values. However, this is not possible at present because I cannot run this model on my laptop and would eat up a lot of Colab credit. I can adjust temperature and top k because these are fast but attention heads, layer numbers etc is impossible at present.
+
 ## Project Overview
 
 This project aims to:
