@@ -1,0 +1,26 @@
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Distribution / packaging
+.Python
+*.so
+.cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Large files that shouldn't be committed
+*.csv
+*.json
+*.jsonl
+*.txt
+
+My_Notes/
