@@ -4,9 +4,11 @@ This repository contains a step-by-step implementation of a Large Language Model
 
 ## Files to note in order are: -
 
-- My_GPT : This is the main GPT structure which draws heavy links with the credited source material.
+- My_GPT.py : This is the python files of my GPT structure which draws heavy links with the credited source material, this was written later so I could easily import funcitions for other uses including running on Colab.
+- My_GPT_construction: This is the first stages of constructing an LLM from tokenization through to the end of the transformer block.
 - My_GPT_download : This is a download of the GPT-2 actual weights and then run through the same generation function written for my model.
-- My_GP_testing : This is an area that I had planned to test different attention heads, temperatures and top k values. However, this is not possible at present because I cannot run this model on my laptop and would eat up a lot of Colab credit. I can adjust temperature and top k because these are fast but attention heads, layer numbers etc is impossible at present.
+- My_GPT_testing : This is an area that I have run tests of different attention heads, temperatures and top k values. I had wanted to test changing the entire structure to see how this effects the foundational model, such as the number attention heads, learning rate, decay or context lengths but with my available infrastucture this would be a massively time consuming task.
+- My_GPT_fine_tuning: This is the area where I turn the foundational model into an acutally useable LLM. I have shown two use cases where it is used for classification where you would normally believe that to be a tasks of machine learninig and secondly into an LLM agent.
 
 ## Project Overview
 
@@ -14,12 +16,11 @@ This project aims to:
 
 - Implement a GPT-2 model from the ground up with detailed explanation of each step required to do this.
 - Load publicly available weights and biases for GPT-2
-- I originally intended to make a model that was small enough to run on a standard Macbook Air, this did not turn out to be the case.
-- Allow for reasonable parameter variations from the original OpenAI implementation
+- Allow for reasonable parameter variations from the original OpenAI implementation and experimention where possible.
 
 ## Implementation Details
 
-The repository contains extensively documented Jupyter notebooks that:
+The repository contains Jupyter notebooks that:
 
 1. Explain the fundamental concepts of transformer-based language models
 2. Break down the key components (attention mechanisms, feed-forward networks, etc.)
@@ -28,7 +29,7 @@ The repository contains extensively documented Jupyter notebooks that:
 
 ## Documentation Approach
 
-The code is accompanied by comprehensive markdown explanations that:
+The code is accompanied by markdown explanations that:
 
 - Connect implementation details to theoretical concepts
 - Highlight critical design decisions and their rationales
@@ -54,5 +55,3 @@ This work stands on the shoulders of:
 This repository is primarily a personal learning project. While others may find it useful as a reference or educational resource, it is not intended as a production-ready implementation.
 
 ---
-
-_Note: This README will be updated as the implementation progresses._

@@ -24,5 +24,6 @@ coverage.xml
 *.txt
 
 My_Notes/
-gpt2/124M
-
+gpt2/
+model_state_dicts/
+resources/
